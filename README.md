@@ -15,13 +15,13 @@ This is a Supplier Selection System which is a command-line program written in C
 
 2. Supplier Data Input: The program prompts the user to enter the number of suppliers and then collects supplier data, including name, delivery time, order accuracy, product quality, lead time, pricing, and special discount (if applicable). It validates each input and ensures correct data entry.
 
-3. Supplier Class and Inheritance: The code includes a base 'Supplier' class and a derived 'PreferredSupplier' class, demonstrating inheritance. The `PreferredSupplier` class extends the functionality of the base class by adding a special discount feature.
+3. Supplier Class and Inheritance: The code includes a base `Supplier` class and a derived `PreferredSupplier` class, demonstrating inheritance. The `PreferredSupplier` class extends the functionality of the base class by adding a special discount feature.
 
-4. Polymorphism: The program uses polymorphism by defining virtual functions in the base 'Supplier' class ('calculateScore()' and 'displayDetails()') and overriding them in the derived 'PreferredSupplier' class.
+4. Polymorphism: The program uses polymorphism by defining virtual functions in the base `Supplier` class (`calculateScore()` and `displayDetails()` ) and overriding them in the derived `PreferredSupplier` class.
 
-5. Score Calculation: The 'calculateScore()' function calculates the score for each supplier based on the given weights for different metrics. The derived 'PreferredSupplier' class overrides this function to include the special discount.
+5. Score Calculation: The `calculateScore()` function calculates the score for each supplier based on the given weights for different metrics. The derived 'PreferredSupplier' class overrides this function to include the special discount.
 
-6. Finding the Best Supplier: The 'findBestSupplier()' function iterates over the list of suppliers, calculates their scores, and identifies the supplier with the lowest score as the best supplier.
+6. Finding the Best Supplier: The `findBestSupplier()` function iterates over the list of suppliers, calculates their scores, and identifies the supplier with the lowest score as the best supplier.
 
 7. Weight Validation: The program ensures that the weights for each metric sum up to 1. If the sum is not 1, it prompts the user to enter the weights again.
 
