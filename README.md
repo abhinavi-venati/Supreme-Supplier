@@ -35,10 +35,6 @@ Overall, the code incorporates error handling, inheritance, polymorphism, and en
 
 The code includes an error handling mechanism to catch and handle various types of runtime errors and exceptions. It ensures that the program gracefully handles erroneous input and provides meaningful error messages to the user. Here are the main aspects of the error handling mechanism:
 
-## Error Handling
-
-The code includes error handling mechanisms to handle various invalid inputs and provide informative error messages to the user. Here are the different types of errors that are handled:
-
 1. Invalid Number of Suppliers:When the user is prompted to enter the number of suppliers, the code checks if the entered value is a positive integer. If an invalid value is entered, such as a negative number or a non-integer value, an exception of type `std::runtime_error` is thrown with an error message indicating the invalid input. The program displays the error message and prompts the user to enter a valid number of suppliers.
 
 2. Invalid Supplier Data:For each supplier, the code validates the input data to ensure it meets the required criteria. For example, the order accuracy and product quality values should be between 0 and 1. If the user enters invalid values, such as a negative number or a value greater than 1, the code displays an error message and prompts the user to enter a valid value.
