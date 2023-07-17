@@ -35,15 +35,19 @@ Overall, the code incorporates error handling, inheritance, polymorphism, and en
 
 The code includes an error handling mechanism to catch and handle various types of runtime errors and exceptions. It ensures that the program gracefully handles erroneous input and provides meaningful error messages to the user. Here are the main aspects of the error handling mechanism:
 
-1.Invalid Number of Suppliers:When the user is prompted to enter the number of suppliers, the code checks if the entered value is a positive integer. If an invalid value is entered, such as a negative number or a non-integer value, an exception of type 'std::runtime_error' is thrown with an error message indicating the invalid input. The program displays the error message and prompts the user to enter a valid number of suppliers.
+## Error Handling
 
-2.Invalid Supplier Data:For each supplier, the code validates the input data to ensure it meets the required criteria. For example, the order accuracy and product quality values should be between 0 and 1. If the user enters invalid values, such as a negative number or a value greater than 1, the code displays an error message and prompts the user to enter a valid value.
+The code includes error handling mechanisms to handle various invalid inputs and provide informative error messages to the user. Here are the different types of errors that are handled:
 
-3.Invalid Weights:After entering the supplier data, the user is prompted to enter the weights for each metric. The code checks if the sum of the weights is equal to 1. If the sum is not equal to 1, an exception of type 'std::runtime_error' is thrown with an error message indicating the invalid weights. The program displays the error message and prompts the user to enter valid weights.
+1. Invalid Number of Suppliers:When the user is prompted to enter the number of suppliers, the code checks if the entered value is a positive integer. If an invalid value is entered, such as a negative number or a non-integer value, an exception of type `std::runtime_error` is thrown with an error message indicating the invalid input. The program displays the error message and prompts the user to enter a valid number of suppliers.
 
-4.Invalid Special Discount:If a supplier has a special discount, the code checks if the entered value is between 1 and 100 (inclusive). If an invalid value is entered, an exception of type 'std::runtime_error' is thrown with an error message indicating the invalid special discount. The program displays the error message and prompts the user to enter a valid value.
+2. Invalid Supplier Data:For each supplier, the code validates the input data to ensure it meets the required criteria. For example, the order accuracy and product quality values should be between 0 and 1. If the user enters invalid values, such as a negative number or a value greater than 1, the code displays an error message and prompts the user to enter a valid value.
 
-5.Displaying Error Messages: When an error occurs, the code displays an error message on the console using `std::cerr` to indicate the issue to the user. The program then continues execution and allows the user to re-enter the correct input.By implementing this error handling mechanism, the code ensures that input validation is performed and appropriate error messages are displayed, enabling a smooth and user-friendly experience even in the presence of invalid input.
+3. Invalid Weights:After entering the supplier data, the user is prompted to enter the weights for each metric. The code checks if the sum of the weights is equal to 1. If the sum is not equal to 1, an exception of type `std::runtime_error` is thrown with an error message indicating the invalid weights. The program displays the error message and prompts the user to enter valid weights.
+
+4. Invalid Special Discount:If a supplier has a special discount, the code checks if the entered value is between 1 and 100 (inclusive). If an invalid value is entered, an exception of type `std::runtime_error` is thrown with an error message indicating the invalid special discount. The program displays the error message and prompts the user to enter a valid value.
+
+5. Displaying Error Messages:When an error occurs, the code displays an error message on the console using `std::cerr` to indicate the issue to the user. The program then continues execution and allows the user to re-enter the correct input.
 
 The error handling mechanism allows the program to recover gracefully from errors. Instead of abruptly terminating, it provides clear error messages and allows the user to enter valid input without losing the current progress.The error handling mechanism implemented in this code enhances its reliability, user-friendliness, and robustness. It ensures that potential runtime errors and invalid inputs are handled effectively, providing a smoother experience for users.
 
